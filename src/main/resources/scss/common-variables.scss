@@ -1,0 +1,15 @@
+/** Fonts **/
+$font-title :  'Cormorant Upright';
+$font :  'Average';
+
+/** Colors **/
+$text-font-color : #3C3C3C;
+$input-font-color: rgb(85, 85, 85);
+
+/** Background **/
+$body-bg : rgba(255,255,255,1) -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(246,246,246,1) 73%, rgba(237,237,237,1) 100%) -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(45%, rgba(255,255,255,1)), color-stop(73%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1))) -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(246,246,246,1) 73%, rgba(237,237,237,1) 100%) -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(246,246,246,1) 73%, rgba(237,237,237,1) 100%) -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(246,246,246,1) 73%, rgba(237,237,237,1) 100%) radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 45%, rgba(246,246,246,1) 73%, rgba(237,237,237,1) 100%);
+$body-filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+
+/** Paths **/
+$path-images : '/assets/images/';
+$path-fonts : '/assets/fonts/';

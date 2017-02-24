@@ -1,0 +1,12 @@
+@import 'common-variables';
+.btn{font-family: $font-title;font-size:1.2em;font-weight:bold;cursor:pointer;position: relative;display:block;opacity: 0.7;
+  label{display:block;cursor:pointer;}
+  &.big{width:147px;height:45px;background-image:url($path-images + "btn-big-bg.png");background-repeat: no-repeat;background-size: auto 200%;text-align: center;
+      background-position:0 -45px;
+    label{line-height:45px;}
+    &:active{background-position:0 0;}
+
+  }
+  &:active{opacity: 1;}
+  &:hover{opacity: 1;}
+}
