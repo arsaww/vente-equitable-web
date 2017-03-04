@@ -7,15 +7,18 @@
     <title>Vente équitable.net</title>
     <link rel="stylesheet" media="all" href="/assets/css/bundle.css"/>
     <link rel="stylesheet" href="../scss/buttons.scss">
+    <script type="text/javascript" src="/assets/scripts/jquery.js"></script>
+    <script type="text/javascript" src="/assets/scripts/main.js"></script>
 </head>
 <body>
     <header>
-        <h1>Vente équitable.net</h1>
+        <h1>Vente équitable</h1>
         <nav>
             <ul>
                 <li class="btn caddie"><label></label></li>
+                <li class="btn menu mobile" onclick="showHideMenu();"></li>
             </ul>
-            <ul class="nav">
+            <ul id="menu" class="nav">
                 <li class="btn nav"><label>Les produits</label></li>
                 <li class="btn nav"><label>Le projet</label></li>
                 <li class="btn nav"><label>Mon profil</label></li>

@@ -15,8 +15,12 @@
     &:hover{text-decoration: underline;}
   }
 
-  &.caddie{height:47px;width:35px;background-image:url($path-images + "caddie.png");background-repeat: no-repeat;background-size:contain;
-    label{font-family:$font;margin: 0 -7px 0 0;text-align: right;font-size: 0.8em;}
+  &.caddie{height:40px;width:35px;background-image:url($path-images + "caddie.png");background-repeat: no-repeat;background-size:contain;
+    label{font-family:$font-title;margin: 0 -7px 0 0;text-align: right;font-size: 0.8em;}
+  }
+
+  &.menu{height:40px;width:35px;background-image:url($path-images + "btn-nav-hamburger.png");background-repeat: no-repeat;background-size:contain;
+    &.active{background-image:url($path-images + "btn-nav-cross.png");}
   }
 
   &:active{background-position:0 0;}

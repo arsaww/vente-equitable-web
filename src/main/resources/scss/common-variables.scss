@@ -1,6 +1,6 @@
 /** Fonts **/
-$font-title :  'Cormorant Upright';
-$font :  'Average';
+$font-title :  'Kalam';
+$font :  'Handlee';
 
 /** Colors **/
 $text-font-color : #3C3C3C;
@@ -21,4 +21,12 @@ $path-fonts : '/assets/fonts/';
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+
+.mobile{display:none !important;}
+
+@media screen and (max-width: 750px) {
+.mobile{display:block !important;}
+
 }

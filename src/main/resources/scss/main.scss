@@ -14,6 +14,7 @@ header{padding:40px 100px 80px 100px;
       li.btn{display:block;float:left;}
     }
   }
+  #menu{z-index:1000;}
 }
 
 /** HOME PAGE **/
@@ -60,22 +61,25 @@ main.slider{
 }
 
 @media screen and (max-width: 750px) {
-  header{background-color:#333;color:white;padding: 10px 20px;
+  header{background-color:#333;color:white;padding: 10px 20px 10px 20px;
     h1{font-size: 1.5em;letter-spacing: 1px;font-weight: normal;}
   }
   .nav-arrow{top:400px;}
   main.slider .slide{height:320px;position:relative;}
   main.slider .slide.left figure{top:0;left:0;width:30%;}
   main.slider .slide.left summary{top:0;left:30%;}
-  header nav ul.nav{
-    li{display:none;}
-    &::before{display:block;height: 47px;position:absolute;top:0;left:0;content:'';
-      width: 35px;
-      background-image: url($path-images + 'btn-nav-cross.png');
-      background-repeat: no-repeat;
-      background-size: contain;
+  header nav {float:right;
+      ul{float:left;margin-left:10px;
+        &#menu{clear:both;background-color:#333;z-index: 1000;display: none;position:absolute;top:45px;right:0px;width:250px;}
+        &#menu.active{display:block;
+          li{padding:0 20px;margin:0;text-align: left;border-bottom:1px #efefef solid;
+            &:last-child{border-bottom:none;}
+          }
+        }
     }
   }
-  header nav ul li.btn{float:none;text-align: right;}
+  header nav ul li.btn.nav{float:none;text-align: right;clear:both;}
+  header nav ul li.btn.caddie{float:left;}
+  header nav ul li.btn.menu{float:left;margin-left:20px;}
 }
 
