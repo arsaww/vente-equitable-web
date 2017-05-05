@@ -1,10 +1,10 @@
 @import 'common-variables';
-h1,h2,h3,h4,h5,h6{font-family: $font-title;font-weight:bold;}
-h1{font-size:2.3em;}
-h2{font-size:2em;line-height:2;}
+h1,h2,h3,h4,h5,h6{font-family: $font-title;font-weight:normal;}
+h1{font-size:2em;}
+h2{font-size:1.7em;line-height:2;}
 
 main{padding:0 100px;position: relative;}
-p{line-height:1.3;text-shadow: 2px 2px 5px rgba(150, 150, 150, 0.2);}
+p{line-height:1.3;text-shadow: 2px 2px 5px rgba(150, 150, 150, 0.2);color: #222222;font-size:1.3em;}
 
 /** HEADER **/
 header{padding:40px 100px 80px 100px;
@@ -32,7 +32,7 @@ main.slider{
         background-repeat:no-repeat;
       }
       summary {display: block;position: absolute;top: 0;left: 50%;height: 100%;
-        div{position:absolute;top:50%;transform: translateY(-50%);padding-left:30px;width:310px;}
+        div.container{position:absolute;top:50%;transform: translateY(-50%);padding-left:30px;width:310px;}
         p{padding-left:4px;font-size:1.2em;}
         .price{float:left;clear:both;font-size:2.2em;padding:20px 0;}
         .btn{float:left;clear:both;}
@@ -45,12 +45,12 @@ main.slider{
 /** Media Queries **/
 @media screen and (max-width: 1150px) {
   header {padding: 20px 51px 20px 50px;}
-  h1{font-size:2em;}
-  h2{font-size:1.7em;line-height:2;}
+  h1{font-size:2.1em;font-weight:normal;}
+  h2{font-size:1.7em;line-height:2;font-weight:normal;}
   .nav-arrow{width:60px;&.left{left:50px;}&.right{right:50px;}}
   main{padding:0 50px;}
   main.slider .slide{height:500px;position:relative;}
-  main.slider .slide.left summary p{font-size:1em;}
+  main.slider .slide.left summary p{font-size:1.1em;}
 }
 
 @media screen and (max-width: 875px) {
@@ -62,24 +62,38 @@ main.slider{
 
 @media screen and (max-width: 750px) {
   header{background-color:#333;color:white;padding: 10px 20px 10px 20px;
-    h1{font-size: 1.5em;letter-spacing: 1px;font-weight: normal;}
+    h1{font-size: 1.5em;font-weight: normal;}
   }
   .nav-arrow{top:400px;}
   main.slider .slide{height:320px;position:relative;}
   main.slider .slide.left figure{top:0;left:0;width:30%;}
   main.slider .slide.left summary{top:0;left:30%;}
   header nav {float:right;
-      ul{float:left;margin-left:10px;
+      ul{float:left;margin-left:10px;position:relative;
         &#menu{clear:both;background-color:#333;z-index: 1000;display: none;position:absolute;top:45px;right:0px;width:250px;}
         &#menu.active{display:block;
-          li{padding:0 20px;margin:0;text-align: left;border-bottom:1px #efefef solid;
+          li{padding:0 10px 0 30px;margin:0;text-align: left;border-bottom:1px #efefef solid;height:50px;
+            label{height:50px;line-height:50px;}
             &:last-child{border-bottom:none;}
           }
         }
     }
   }
   header nav ul li.btn.nav{float:none;text-align: right;clear:both;}
-  header nav ul li.btn.caddie{float:left;}
-  header nav ul li.btn.menu{float:left;margin-left:20px;}
+  header nav ul li.btn.caddie{float:left;position:absolute;top:0;right:50px;}
+  header nav ul li.btn.menu{float:left;margin-left:20px;position:absolute;top:0;right:0;}
 }
 
+@media screen and (max-width: 550px) {
+  main.slider{padding:10px 20px 0 20px;}
+  main.slider .slide.left figure{display:none;}
+  main.slider .slide.left summary{position:relative;left:0;min-width:280px;width:auto;
+    div.container{padding:0;top:0;transform:none;width:auto;min-width:280px;position:relative;}
+    h2{text-align:center;font-size:1.5em; }
+    p{display:none;}
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main.slider .slide.left summary h2{font-size:1.3em;}
+}

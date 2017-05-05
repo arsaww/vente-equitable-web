@@ -1,7 +1,7 @@
 @import 'common-variables';
-.btn{font-family: $font-title;font-size:1.2em;font-weight:bold;cursor:pointer;position: relative;display:block;letter-spacing: 1px;
+.btn{font-family: $font-title;font-size:1em;font-weight:normal;cursor:pointer;position: relative;display:block;
   @include noselect();
-  label{display:block;cursor:pointer;}
+  label{display:block;cursor:pointer;font-weight:normal;}
 
   &.big{width:147px;height:45px;background-image:url($path-images + "btn-big-bg.png");background-repeat: no-repeat;background-size: auto 200%;text-align: center;
       background-position:0 -45px;
@@ -9,14 +9,14 @@
     &:hover{text-shadow: 5px 5px 5px rgba(150, 150, 150, 0.5);}
   }
 
-  &.nav{height:47px;text-align: center;margin:0 15px;
-    background-position:0 -47px;
-    label{line-height:47px;}
+  &.nav{height:37px;text-align: center;margin:0 15px;
+    background-position:0 -37px;
+    label{line-height:37px;font-family: $font;}
     &:hover{text-decoration: underline;}
   }
 
   &.caddie{height:40px;width:35px;background-image:url($path-images + "caddie.png");background-repeat: no-repeat;background-size:contain;
-    label{font-family:$font-title;margin: 0 -7px 0 0;text-align: right;font-size: 0.8em;}
+    label{margin: 0 -7px 0 0;text-align: right;font-size: 0.8em;}
   }
 
   &.menu{height:40px;width:35px;background-image:url($path-images + "btn-nav-hamburger.png");background-repeat: no-repeat;background-size:contain;
